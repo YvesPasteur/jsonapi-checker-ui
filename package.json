@@ -10,7 +10,6 @@
     "node-static": "*",
     "react": "0.13.1",
     "react-ace": "^3.2.0",
-    "superagent": "1.1.0",
     "throttle-debounce": "^0.1.1"
   },
   "devDependencies": {

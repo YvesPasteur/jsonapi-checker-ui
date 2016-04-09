@@ -1,7 +1,6 @@
 'use strict';
 
 var React = require('react');
-var brace = require('brace');
 var AceEditor = require('react-ace');
 var debounce = require('throttle-debounce').debounce;
 
@@ -75,7 +74,7 @@ var UserFields = React.createClass({
           />
         </div>
       </form>
-    </div>
+    </div>;
   }
 });
 

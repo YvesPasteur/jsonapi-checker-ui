@@ -1,3 +1,5 @@
+'use strict';
+
 var React = require('react');
 
 module.exports = function(JSONPretty) {
@@ -52,7 +54,7 @@ module.exports = function(JSONPretty) {
       return 'danger';
     },
     formatPath: function(validation) {
-      if(validation.path) {
+      if (validation.path) {
         return JSON.stringify(validation.path);
       }
     },
@@ -61,7 +63,7 @@ module.exports = function(JSONPretty) {
         <h2>The server validation</h2>
         <form>
           <div className="form-group">
-            <label id="responseStatusField" className={"text-" + this.getStatusLevel(this.props.responseStatus)}>Status</label>
+            <label id="responseStatusField" className={'text-' + this.getStatusLevel(this.props.responseStatus)}>Status</label>
             <input
               type="text"
               id="responseStatusField"

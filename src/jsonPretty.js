@@ -1,3 +1,5 @@
+'use strict';
+
 var React = require('react');
 
 var mapObject = function(object, callback) {
@@ -20,7 +22,7 @@ var JsonLeaf = React.createClass({
 
 var JsonKey = React.createClass({
   render: function() {
-    return <span className="json-key">"{this.props.value}":</span>
+    return <span className="json-key">"{this.props.value}":</span>;
   }
 });
 
@@ -72,17 +74,17 @@ var JsonObject = React.createClass({
                 addTrailingComma={!isLast}
               >
               </JsonChild>
-            </div>
+            </div>;
       })}
         {'}'}{this.props.addTrailingComma ? ',' : ''}
-      </div>
+      </div>;
   }
 });
 
 var JsonArray = React.createClass({
   render: function() {
     var formatChildren = function(children) {
-      return children.map(((value, index, array) => {
+      return children.map((value, index, array) => {
         var path = this.props.parentPath + '[' + index + ']';
         const style = {
           paddingLeft: '1em'
@@ -100,8 +102,8 @@ var JsonArray = React.createClass({
           >
           </JsonChild>
         </div>;
-      }).bind(this))
-    }.bind(this);
+      });
+    };
 
     return <div className="json-array"> [
         {formatChildren(this.props.value)}
@@ -119,7 +121,7 @@ var JSONPretty = React.createClass({
         json = JSON.parse(json);
       }
       catch (e) {
-        console.error("The string is not a valid json data!", e);
+        console.error('The string is not a valid json data!', e); // eslint-disable-line no-console
       }
     }
 
