@@ -124,7 +124,7 @@ var App = React.createClass({
           <div role="tabpanel" className="tab-pane" id="aboutTab">
             <div className="col-md-6">
               <h2>I don't know what is JSON API</h2>
-              <p>I won't try to explain you, the official site will do the job : <a href="http://jsonapi.org/" target="_blank">http://jsonapi.org/</a></p>
+              <p>I won't try to explain to you what is the JSON API specification, because the official site will do the job better : <a href="http://jsonapi.org/" target="_blank">http://jsonapi.org/</a></p>
 
               <h2>Where can I find the code of this validator ?</h2>
               <p>
