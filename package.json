@@ -1,5 +1,5 @@
 {
-  "name": "jsonapi-spec-validator-ui",
+  "name": "jsonapi-checker-ui",
   "version": "0.0.1",
   "description": "UI client for the jsonapi checker server",
   "author": "YvesPasteur",
