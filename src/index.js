@@ -130,9 +130,9 @@ var App = React.createClass({
               <p>
                 This validator is made from 3 parts :
                 <ol>
-                  <li>The UI is built on ReactJs and Bootstap, repository : https://github.com/YvesPasteur/jsonapi-spec-validator-ui</li>
-                  <li>The Api Server is built on Hapi (NodeJs), repository : not coming soon</li>
-                  <li>The validation library is built on Should (NodeJs), repository : coming soon</li>
+                  <li>The UI is built on ReactJs and Bootstrap : <a href="https://github.com/YvesPasteur/jsonapi-checker-ui" target="_blank">repository</a></li>
+                  <li>The Api Server is built on Hapi (NodeJs) : repository is not coming soon</li>
+                  <li>The validation library is built on Chai (Js) : <a href="https://github.com/YvesPasteur/jsonapi-checker-lib" target="_blank">repository</a></li>
                 </ol>
               </p>
 
