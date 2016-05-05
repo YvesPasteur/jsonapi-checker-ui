@@ -12,6 +12,7 @@ module.exports = function(baseUrl) {
     error: Store.attr(),
     path: Store.attr(),
     header: Store.attr(),
+    url: Store.attr(),
     method: Store.attr(),
     body: Store.attr(),
     rules: Store.hasMany()

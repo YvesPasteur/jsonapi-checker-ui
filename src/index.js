@@ -35,6 +35,9 @@ var App = React.createClass({
     if (value.header && value.header.contentType) {
       req.header.contentType = value.header.contentType;
     }
+    if (value.url) {
+      req.url = value.url;
+    }
     if (value.body) {
       req.body = value.body;
     }
@@ -44,6 +47,9 @@ var App = React.createClass({
 
     if (! req.method) {
       delete req.method;
+    }
+    if (! req.url) {
+      delete req.url;
     }
 
     this.setState({request: req});

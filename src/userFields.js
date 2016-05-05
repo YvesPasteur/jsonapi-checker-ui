@@ -23,6 +23,13 @@ var UserFields = React.createClass({
       }
     );
   },
+  handleUrlChange: function(e) {
+    this.handleChange(
+      {
+        url:  e.target.value.trim()
+      }
+    );
+  },
   handleBodyChange: function(value) {
     this.handleChange({body: value});
   },
@@ -40,6 +47,16 @@ var UserFields = React.createClass({
             id="contentTypeField"
             value={this.props.contentType}
             onChange={this.handleContentTypeChange}
+            className="form-control"
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="contentTypeField">Url</label>
+          <input
+            type="text"
+            id="urlField"
+            value={this.props.url}
+            onChange={this.handleUrlChange}
             className="form-control"
           />
         </div>
