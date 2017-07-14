@@ -4,6 +4,9 @@
   "description": "UI client for the jsonapi checker server",
   "author": "YvesPasteur",
   "license": "MIT",
+  "engines": {
+    "node": "8.1.4"
+  },
   "main": "src/index.js",
   "dependencies": {
     "json-api-store": "^0.7.0",
